@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsif Web</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 15px;
+            width: 90%;
+            margin: 90px auto;  
+        }
+        [class*='box']{
+            box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .media{
+            box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            height: 150px;
+            width: 150px;
+            float: right;
+            margin: 10px;
+            background-position: center;
+            background-size: cover;
+        }
+        .gambar{
+            box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            height: 100px;
+            width: 180px;
+            float: right;
+            margin: 10px;
+            background-position: center;
+            background-size: cover;
+        }
+        .box-1{
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+        .box-1 > .media{
+            width: 100%;
+            height: 250px;
+            margin-bottom: 20px;
+            background-image: url(awe.jpg);
+            border-radius: 0;
+            margin-top: 0;
+            margin-right: 0;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 15px;
+            margin-top: 0;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px); 
+        }
+        li{
+            padding: 10px;
+        }
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color:black;
+            min-height: 100vh;
+            width: 100%;
+            height: 90%;
+        }
+        .box-1 > p .box-1 > h2{
+            padding-left: 10px;
+        }
+        .box-2 .media{
+            background-image: url(HTML.png);
+        }
+        .box-3 .media{
+            background-image: url(CSS.png);
+        }
+        .box-4 .media{
+            background-image: url(JSSSSS.jpg);
+        }
+        .box-5 .gambar{
+            background-image: url(gggg.png);
+        }
+        .box-6 .media{
+            background-image: url(icloud.jpg);
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        p{
+            color: grey;
+        }
+        @media only screen and (max-width: 768px){
+            .container, ul{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="/course.html">Course</a></li>
+        <li><a href="/Blog.html">Blog</a></li>
+        <li><a href="/portofolio.html">Portfolio</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/teams.html">Teams</a></li>
+    </ul>
+    <div class="container">
+        <div class="box-1">
+            <div class="media"></div>
+            <h3>KAMPUS LP3I</h3>
+            <p>
+                LP3I (Lembaga Pendidikan Pengembangan Profesi Indonesia) Lembaga Pendidika Yang fokus dalam pengembangan ketrampilan dan profesi.
+                Kamus LP3I menawarkan berbagai program pendidikan vokasi, seperti kursus, Pelatihan, Dan pendidikan tinggi yang bertujuan untuj mempersiapkan
+                Kelulusan dengan keterampilan praktis yang siap pakai didunia kerja. 
+            </p>
+        </div>
+        <div class="box-2">
+            <div class="media"></div>
+            <h3>HTML</h3>
+            <p>(Hypertext Markup Language) Membuat dan Menyusun Halaman Web.</p>
+        </div>
+        <div class="box-3">
+            <div class="media"></div>
+            <h3>CSS</h3>
+            <p>(Cascading Style Sheets) Mengatur tampilan dan Layout Halaman Web.</p>
+        </div>
+        <div class="box-4">
+            <div class="media"></div>
+            <h3>JavaScript</h3>
+            <p>Pemrograman Yang digunakan untuk membuat halaman Web interaktif dan Dinamis.</p>
+        </div>
+        <div class="box-5">
+            <div class="gambar"></div>
+            <h3>GITHUB</h3>
+            <p>Sebuah Platform berbasis Web digunakan untuk mengolah dan berbagi kode sumber menggunakan
+                sistem kontrol versi git.
+            </p>
+        </div>
+        <div class="box-6">
+            <div class="media"></div>
+            <h3>IcloudHOST</h3>
+            <p>Sebuah Aplikasi Layanan Penyimpanan awan (Cloud Storage)dan komputasi awan dari Apple.</p>
+        </div>
+    </div>
+</body>
+</html>
